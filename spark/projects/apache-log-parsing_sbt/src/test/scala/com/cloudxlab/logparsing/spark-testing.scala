@@ -30,4 +30,6 @@ class SampleTest extends FunSuite with SharedSparkContext {
         assert(records.length === 1)
         assert(records(0)._1 == "121.242.40.10")
     }
+
+    
 }
