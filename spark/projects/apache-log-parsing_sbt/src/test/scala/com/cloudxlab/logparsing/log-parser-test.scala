@@ -22,9 +22,9 @@ class LogParserSpec extends FlatSpec {
   }
    "ClassA" should "check if string has Class A " in {
      val utils = new Utils
-     assert(utils.isClassA("12.123.34.56"))
-      assert(utils.isClassA("122.123.34.56 "))
-      assert(utils.isClassA("121.123.34.56"))
-      assert(utils.isClassA("20.123.34.56 "))
+     assert(utils.isClassA("121.123.34.56"))
+      assert(!utils.isClassA("222.123.34.56"))
+      assert(!utils.isClassA("221.123.34.56"))
+      assert(!utils.isClassA("220.123.34.56 "))
     }
 }
